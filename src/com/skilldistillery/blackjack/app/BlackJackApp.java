@@ -1,15 +1,47 @@
 package com.skilldistillery.blackjack.app;
 
-public class BlackJackApp {
+import java.util.ArrayList;
+import java.util.List;
+
+import com.skilldistillery.blackjack.entities.BlackjackDealer;
+import com.skilldistillery.blackjack.entities.BlackjackPlayer;
+
+public class BlackjackApp {
 
     public static void main(String[] args) {
-        BlackJackApp app = new BlackJackApp();
-        app.run();
-        
+        BlackjackApp game = new BlackjackApp();
+        game.play();
     }
 
-    public void run() {
+    public void play() {
+        List<BlackjackPlayer> players = new ArrayList<>();
+
+        BlackjackDealer dealer = new BlackjackDealer();
+        BlackjackPlayer player1 = new BlackjackPlayer();
+        BlackjackPlayer player2 = new BlackjackPlayer();
+        players.add(player1);
+        players.add(player2);
+
+        dealer.shuffle();
+
+        dealer.initialDeal(players);
+        System.out.println(dealer.toString());
+        System.out.println(player1.toString());
+        System.out.println(player2.toString());
+
+        player1.addCard(dealer.dealCard());
+        player1.addCard(dealer.dealCard());
+        player2.addCard(dealer.dealCard());
+        player2.addCard(dealer.dealCard());
+        System.out.println(dealer.toString());
+        System.out.println(player1.toString());
+        System.out.println(player2.toString());
+
+        dealer.addCard(dealer.dealCard());
+        dealer.addCard(dealer.dealCard());
+        System.out.println(dealer.toString());
+        System.out.println(player1.toString());
+        System.out.println(player2.toString());
 
     }
-
 }
