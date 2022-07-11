@@ -105,3 +105,6 @@ n
 - Getting used to thinking in "super" and "this"
 - The effectiveness of UML modeling and diagramming
 - More regex implementation
+
+## UML Class Diagram
+![Confirm Perspective Switch](images/BlackjackProject.png)
