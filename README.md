@@ -1,11 +1,107 @@
+
+<img src="https://www.seekpng.com/png/full/154-1547581_blackjack-teaser-blackjack-logo.png"/>
+
 # BlackJackProject
 
-# Description
+## Description
+Classes and test app to play a functioning game of blackjack.
 
-# Technologies Used
+## Usage
+User is prompted to hit or stay on the initial hand they are presented.
+Once they choose to stay, the dealer hits and then stays as dictated by standard blackjack rules.
+The winner is then displayed along with the dealer's full hand.
 
-# Lesson Learned
+### Usage Constraints
+Aces are only valued at 11 and not with the optional value of 1.
 
-<div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;xml&quot;:&quot;&lt;mxfile host=\&quot;Electron\&quot; modified=\&quot;2022-07-10T17:44:15.521Z\&quot; agent=\&quot;5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/19.0.3 Chrome/102.0.5005.63 Electron/19.0.3 Safari/537.36\&quot; etag=\&quot;zFUXpAFgRCOYX2CkuPv-\&quot; version=\&quot;19.0.3\&quot; type=\&quot;device\&quot;&gt;&lt;diagram name=\&quot;Page-1\&quot; id=\&quot;6133507b-19e7-1e82-6fc7-422aa6c4b21f\&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;&quot;,&quot;toolbar&quot;:&quot;pages zoom layers lightbox&quot;,&quot;page&quot;:0}"></div>
-<script type="text/javascript" src="https://app.diagrams.net/js/viewer-static.min.js"></script>
+### Display Output
+- Start message
+- Option to hit or stay
+- Player's hand of cards
+- Dealer's hand of cards with first card face down
+- Winner
+- Winning hands (dealer's face up)
 
+###### Output Example
+```formatted output
+============================
+-=* Welcome to Blackjack *=-
+============================
+-=*   Ace value is 11    *=-
+-=*    Single Player     *=-
+-=*     Single Deck      *=-
+-=*      No Doubles      *=-
+-=*      No Splits       *=-
+-=*       No Bets        *=-
+-=*   Drinks are Free    *=-
+============================
+* Starting Game *
+* Dealer Shuffles *
+* Dealer Begins Dealing *
+
+Player's Hand: [FIVE of Hearts, TWO of Hearts] (7)
+Dealer's Hand: [*FACE DOWN*, FOUR of Diamonds]
+
+* Hit or Stay? *
+h
+* Player Hits *
+
+Player's Hand: [FIVE of Hearts, TWO of Hearts, NINE of Diamonds] (16)
+Dealer's Hand: [*FACE DOWN*, FOUR of Diamonds]
+
+* Hit or Stay? *
+h
+* Player Hits *
+
+Player's Hand: [FIVE of Hearts, TWO of Hearts, NINE of Diamonds, FIVE of Spades] (21)
+Dealer's Hand: [*FACE DOWN*, FOUR of Diamonds]
+
+* Hit or Stay? *
+s
+* Player Stays *
+* Dealer Hits *
+
+Player's Hand: [FIVE of Hearts, TWO of Hearts, NINE of Diamonds, FIVE of Spades] (21)
+Dealer's Hand: [*FACE DOWN*, FOUR of Diamonds, EIGHT of Hearts]
+
+* Dealer Busts *
+
+Player's Hand: [FIVE of Hearts, TWO of Hearts, NINE of Diamonds, FIVE of Spades] (21)
+Dealer's Hand: [QUEEN of Hearts, FOUR of Diamonds, EIGHT of Hearts] (22)
+
+* Player Wins *
+
+* Would you like to play again? *
+n
+
+* Thanks for playing * 
+``` 
+
+## Technologies Used
+- Java 8
+- Eclipse AArch64
+- MacOS on Silicon
+- Git
+- GitHub
+- Slack
+- Discord 
+- (Google)
+
+## Topics
+- Building object-oriented classes
+- Building classes with object fields
+- Abstract classes
+- Inheritance
+- Encapsulation
+- Enumerated types
+- Creating and simplifying readability and troubleshooting with methods
+- Using collection types to organize and manage data
+- Using conditionals to create implementation logic
+- Nested looping
+- Visibility
+
+## What I Learned
+- Extensive use of everything covered in the topics above
+- Getting used to thinking in "super" and "this"
+- The effectiveness of UML modeling and diagramming
+- More regex implementation
