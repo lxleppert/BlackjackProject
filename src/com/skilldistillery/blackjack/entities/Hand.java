@@ -24,9 +24,12 @@ public abstract class Hand {
         cards.clear();
     }
 
-    @Override
-    public String toString() {
-        return "Hand [cards=" + cards + "]";
+    public List<Card> getHand() {
+        return cards;
     }
 
+    @Override
+    public String toString() {
+        return "Hand: " + cards;
+    }
 }

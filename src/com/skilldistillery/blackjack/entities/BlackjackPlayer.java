@@ -1,22 +1,36 @@
 package com.skilldistillery.blackjack.entities;
 
 public class BlackjackPlayer {
-    private Hand hand;
+    private BlackjackHand hand;
 
     public BlackjackPlayer() {
-        this.hand = new BlackjackHand();
+        hand = new BlackjackHand();
     }
 
-//    public Hand getHand() {
-//        return hand;
-//    }
+    public int getHandValue() {
+        return hand.getHandValue();
+    }
 
-//    public void setHand(BlackjackHand hand) {
-//        this.hand = hand;
-//    }
+    public void hit(Card card) {
+        hand.addCard(card);
+    }
 
-    public void addCard(Card card) {
-        this.hand.addCard(card);
+    public boolean isBust() {
+        if (hand.isBust()) {
+            return true;
+        }
+        return false;
+    }
+
+    public boolean hasBlackjack() {
+        if (hand.hasBlackjack()) {
+            return true;
+        }
+        return false;
+    }
+
+    public Hand getHand() {
+        return hand;
     }
 
     @Override

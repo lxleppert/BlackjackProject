@@ -49,5 +49,5 @@ public class Card {
         builder.append(" of ");
         builder.append(suit);
         return builder.toString();
-    }
+    }    
 }
